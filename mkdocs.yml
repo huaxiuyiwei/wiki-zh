@@ -1,0 +1,84 @@
+# Project information
+site_name: ScratchHW
+site_url: https://ScratchHW.github.io/wiki-zh
+site_author: ScratchHW Team
+site_description: >-
+  Porgram your hardware with scratch3
+
+# Repository
+repo_name: ScratchHW/wiki-zh
+repo_url: https://github.com/ScratchHW/wiki-zh
+
+# Configuration
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+
+# Copyright
+copyright: Copyright &copy; 2020 ScratchHW
+
+# Customization
+extra:
+  disqus: scratchhw
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ScratchHW
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting started:
+    - Installation(developer): install-software-developer.md
+    - Installation(user): install-software-user.md
+    - License: license.md
+  - Reference:
+    - Framework introduction: reference/framework-introduction.md
+  - Changelog:
+    - Release notes: changelog.md
