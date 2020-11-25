@@ -73,12 +73,12 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
-  - Getting started:
-    - Installation(developer): install-software-developer.md
-    - Installation(user): install-software-user.md
-    - License: license.md
-  - Reference:
-    - Framework introduction: reference/framework-introduction.md
-  - Changelog:
-    - Release notes: changelog.md
+  - 主页: index.md
+  - 入门:
+    - 安装(开发者): install-software-developer.md
+    - 安装(普通用户)): install-software-user.md
+    - 许可证: license.md
+  - 指南:
+    - 构架介绍: reference/framework-introduction.md
+  - 变更记录:
+    - 发行说明: changelog.md
