@@ -76,7 +76,7 @@ nav:
   - 主页: index.md
   - 入门:
     - 安装(开发者): install-software-developer.md
-    - 安装(普通用户)): install-software-user.md
+    - 安装(普通用户): install-software-user.md
     - 许可证: license.md
   - 指南:
     - 构架介绍: reference/framework-introduction.md
