@@ -45,16 +45,9 @@
    npm install
    npm link
    cd ..
-   cd scratch-link
-   npm install
-   npm link
-   cd ..
-   cd scratch-extension-server
-   npm install
-   npm link
-   cd ..
    cd scratch-gui
    npm install
+   npm link save-svg-as-png scratch-blocks scratch-l10n scratch-vm
    cd ..
    ```
 
