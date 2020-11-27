@@ -29,6 +29,12 @@
 2. Install 和 link
 
    ```bash
+   cd scratch-link
+   npm install
+   cd ..
+   cd scratch-extension-server
+   npm install
+   cd ..
    cd saveSvgAsPng
    npm install
    npm link
@@ -39,6 +45,7 @@
    cd ..
    cd scratch-l10n
    npm install
+   npm build
    npm link
    cd ..
    cd scratch-vm
@@ -49,6 +56,20 @@
    npm install
    npm link save-svg-as-png scratch-blocks scratch-l10n scratch-vm
    cd ..
+   ```
+
+2. 复制Arduino IDE到 `scratch-link\tools\Arduino\*`，完成后文件结构应该如下面所示。
+
+   ```
+   scratch-link\tools\
+   |- Arduino\
+     |- drivers\
+     |- examples\
+     |- hardware\
+     |- java\
+     ...
+     |- arduino.exe
+     |- arduino_debug.exe
    ```
 
 ## 运行
