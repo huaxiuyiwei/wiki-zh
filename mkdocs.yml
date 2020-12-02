@@ -80,5 +80,6 @@ nav:
     - 许可证: license.md
   - 指南:
     - 构架介绍: reference/framework-introduction.md
+    - 如何添加新设备: reference/how-to-add-a-new-device.md
   - 变更记录:
     - 发行说明: changelog.md
