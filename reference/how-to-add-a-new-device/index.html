@@ -1,0 +1,888 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Porgram your hardware with scratch3">
+      
+      
+      
+        <link rel="canonical" href="https://ScratchHW.github.io/wiki-zh/reference/how-to-add-a-new-device/">
+      
+      
+        <meta name="author" content="ScratchHW Team">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
+    
+    
+      
+        <title>如何添加新设备 - ScratchHW</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://ScratchHW.github.io/wiki-zh" title="ScratchHW" class="md-header-nav__button md-logo" aria-label="ScratchHW">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            ScratchHW
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              如何添加新设备
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/ScratchHW/wiki-zh/" title="前往 GitHub 仓库" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ScratchHW/wiki-zh
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+    <a href="../.." class="md-tabs__link">
+      主页
+    </a>
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../../install-software-developer/" class="md-tabs__link">
+        入门
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+        
+      
+      <a href="../framework-introduction/" class="md-tabs__link md-tabs__link--active">
+        指南
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../../changelog/" class="md-tabs__link">
+        变更记录
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ScratchHW.github.io/wiki-zh" title="ScratchHW" class="md-nav__button md-logo" aria-label="ScratchHW">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ScratchHW
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ScratchHW/wiki-zh/" title="前往 GitHub 仓库" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ScratchHW/wiki-zh
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      主页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      入门
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="入门" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        入门
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../install-software-developer/" class="md-nav__link">
+      安装(开发者)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../install-software-user/" class="md-nav__link">
+      安装(普通用户)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../license/" class="md-nav__link">
+      许可证
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    <label class="md-nav__link" for="nav-3">
+      指南
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="指南" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        指南
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../framework-introduction/" class="md-nav__link">
+      构架介绍
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        如何添加新设备
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      如何添加新设备
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scratch-gui" class="md-nav__link">
+    在scratch-gui中添加设备的图片和配置
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-device-code-in-scratch-vm" class="md-nav__link">
+    Add the device code in scratch-vm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-block2code-generator-function-in-scratch-blocks" class="md-nav__link">
+    Add block2code generator function in scratch-blocks
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      变更记录
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="变更记录" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        变更记录
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../changelog/" class="md-nav__link">
+      发行说明
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scratch-gui" class="md-nav__link">
+    在scratch-gui中添加设备的图片和配置
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-device-code-in-scratch-vm" class="md-nav__link">
+    Add the device code in scratch-vm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-block2code-generator-function-in-scratch-blocks" class="md-nav__link">
+    Add block2code generator function in scratch-blocks
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ScratchHW/wiki-zh/edit/master/docs/reference/how-to-add-a-new-device.md" title="编辑此页" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1">如何添加新设备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">介绍<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>在scratch-HW中，设备各种单片机, 如: arduino uno, arduino nano 等。 和原scratch的扩展相比, 设备所指的单片机需要在用户在设备界面中单击后才会被加载。</p>
+<h2 id="scratch-gui">在scratch-gui中添加设备的图片和配置<a class="headerlink" href="#scratch-gui" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>根据下面的参数拍摄单片机照片。并保留合适的白色边缘。 </p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>png</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resolution</td>
+<td>600x372</td>
+</tr>
+<tr>
+<td>Background Color</td>
+<td>white</td>
+</tr>
+</tbody>
+</table>
+<p>你可以根据下图进行制作。最后使用单片机的名称进行命名。 请遵循驼峰格式, 如 :  <code>arduinoLeonardo.png</code></p>
+<p><img alt="arduinoLeonardo" src="../asset/arduinoLeonardo.png" /></p>
+</li>
+<li>
+<p>将pnd格式图片后转换为svg图片.</p>
+<p><strong>Delte the background</strong> of the board picture. And crop image along the edge of board, aspect ratio is <strong>108x87</strong>, save it. Then crop image‘s aspect ratio to**1x1**, save it.</p>
+<p>Visit this website: <a href="https://www.aconvert.com/image/">aconvert.com</a>. Upload the saved pictures, convert it to svg format separately. Remember to select the <strong>Resize image</strong> option as <strong>Change width and Height</strong>, set <strong>Image size</strong> <strong>108x87</strong> and <strong>40x40</strong>.</p>
+<p>Save the 108x87 piture with name <board name>-illustration.svg, eg : <code>arduinoUno-illustration.svg</code></p>
+<p><img alt="arduinoUno-illustration" src="../asset/arduinoUno-illustration.svg" /></p>
+<p>Save the 40x40 piture with name <board name>-small.svg, eg : <code>arduinoUno-small.svg</code></p>
+<p><img alt="arduinoUno-small" src="../asset/arduinoUno-small.svg" /></p>
+</li>
+<li>
+<p>Pull three pictures to a folder named with the board name. eg : <code>arduinoUno</code>, move this folder to path : <code>scratch-gui\src\lib\libraries\devices\</code></p>
+<p>When you're done, the file structure will look like this :</p>
+<div class="highlight"><pre><span></span><code>scratch-gui\src\lib\libraries\devices\
+    |- arduinoLeonardo\
+    |- arduinoMega2560\
+    |- baseToolbox\
+    |- ...
+    |- &lt;board name&gt;\
+        |- &lt;board name&gt;.png
+        |- &lt;board name&gt;-illustration.svg
+        |- &lt;board name&gt;-small.svg
+    |- index.jsx
+</code></pre></div>
+</li>
+<li>
+<p>Configuration in <code>index.jsx</code>.</p>
+</li>
+</ol>
+<p>In file <code>scratch-gui\src\lib\libraries\devices\index.jsx</code>，You can see that there are already some configuration of devices there. Let's take arduino uno's parameters as an example.</p>
+<p>Fist, import the pictures.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">import</span> <span class="nx">arduinoUnoIconURL</span> <span class="nx">from</span> <span class="s1">&#39;./arduinoUno/arduinoUno.png&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">arduinoUnoConnectionIconURLL</span> <span class="nx">from</span> <span class="s1">&#39;./arduinoUno/arduinoUno-illustration.svg&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">arduinoUnoConnectionSmallIconURL</span> <span class="nx">from</span> <span class="s1">&#39;./arduinoUno/arduinoUno-small.svg&#39;</span><span class="p">;</span>
+</code></pre></div>
+<p>Then set the configuration.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Arduino Uno&#39;</span><span class="p">,</span>
+        <span class="nx">deviceId</span><span class="o">:</span> <span class="s1">&#39;arduinoUno&#39;</span><span class="p">,</span>
+        <span class="nx">collaborator</span><span class="o">:</span> <span class="s1">&#39;arduino&#39;</span><span class="p">,</span>
+        <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;arduino&#39;</span><span class="p">,</span>
+        <span class="nx">iconURL</span><span class="o">:</span> <span class="nx">arduinoUnoIconURL</span><span class="p">,</span>
+        <span class="nx">description</span><span class="o">:</span> <span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">FormattedMessage</span>
+                <span class="nx">defaultMessage</span><span class="o">=</span><span class="s2">&quot;The best board to get started with electronics and coding.&quot;</span>
+                <span class="nx">description</span><span class="o">=</span><span class="s2">&quot;Description for the Arduino Uno device&quot;</span>
+                <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;gui.device.arduinoUno.description&quot;</span>
+            <span class="o">/&gt;</span>
+        <span class="p">),</span>
+        <span class="nx">featured</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">disabled</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nx">bluetoothRequired</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nx">serialportRequired</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">internetConnectionRequired</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nx">launchPeripheralConnectionFlow</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">useAutoScan</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nx">connectionIconURL</span><span class="o">:</span> <span class="nx">arduinoUnoConnectionIconURLL</span><span class="p">,</span>
+        <span class="nx">connectionSmallIconURL</span><span class="o">:</span> <span class="nx">arduinoUnoConnectionSmallIconURL</span><span class="p">,</span>
+        <span class="nx">connectingMessage</span><span class="o">:</span> <span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">FormattedMessage</span>
+                <span class="nx">defaultMessage</span><span class="o">=</span><span class="s2">&quot;Connecting&quot;</span>
+                <span class="nx">description</span><span class="o">=</span><span class="s2">&quot;Message to help people connect to their arduino.&quot;</span>
+                <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;gui.device.arduino.connectingMessage&quot;</span>
+            <span class="o">/&gt;</span>
+        <span class="p">),</span>
+        <span class="nx">baseToolBoxXml</span><span class="o">:</span> <span class="nx">arduinoBaseToolBox</span><span class="p">,</span>
+        <span class="nx">programMode</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;realtime&#39;</span><span class="p">,</span> <span class="s1">&#39;upload&#39;</span><span class="p">],</span>
+        <span class="nx">programLanguage</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;block&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;cpp&#39;</span><span class="p">],</span>
+        <span class="nx">helpLink</span><span class="o">:</span> <span class="s1">&#39;https://store.arduino.cc/usa/arduino-uno-rev3&#39;</span>
+<span class="p">},</span>
+</code></pre></div>
+<p>** indicates that this is required.The same below.*</p>
+<ul>
+<li>
+<p><strong>name</strong></p>
+<p>The display name of this device.</p>
+</li>
+<li>
+<p><strong>deviceId*</strong></p>
+<p>The id witch used to load device in scratch-vm.</p>
+</li>
+<li>
+<p><strong>collaborator</strong></p>
+<p>This will be displayed in <strong>Collaborator</strong> bar of the device selection interface.</p>
+</li>
+<li>
+<p><strong>type*</strong></p>
+<p>It tells gui witch code generator should be use.</p>
+</li>
+<li>
+<p><strong>iconURL*</strong></p>
+<p>Will be displayed in  device selection interface.</p>
+</li>
+<li>
+<p><strong>description</strong></p>
+<p>This will be displayed in bottom of iconURL of the device selection interface. For multi language we use <strong>FormattedMessage</strong> here, It will be send to the scratchHW project in translation website. If the translation is not available yet, the content in defaultMessage will be displayed.</p>
+</li>
+<li>
+<p><strong>featured*</strong></p>
+<p>This is a internal attribute. It should always set to true.</p>
+</li>
+<li>
+<p><strong>disabled</strong></p>
+<p>Set to true to disabled this device selection.</p>
+</li>
+<li>
+<p><strong>bluetoothRequired/serialportRequired/internetConnectionRequired</strong></p>
+<p>Set to true to display the connection icon in <strong>Requires</strong> bar of the device selection interface. These parameters are only used to control the display in the device selection interface, will not affect the actual connection function.</p>
+</li>
+<li>
+<p><strong>launchPeripheralConnectionFlow*</strong></p>
+<p>It tells gui open the connection interface after we select the device, recommended to set to true.</p>
+</li>
+<li>
+<p><strong>useAutoScan</strong></p>
+<p>This is used to search and connect device automaticly.</p>
+</li>
+<li>
+<p><strong>connectionIconURL*</strong></p>
+<p>Will be displayed in device connection coninterface.</p>
+</li>
+<li>
+<p><strong>connectionSmallIconURL*</strong></p>
+<p>Will be displayed in the top bar of device connection interface.</p>
+</li>
+<li>
+<p><strong>connectingMessage*</strong></p>
+<p>The message to be displayed in device connection interface while connecting. Suggested not to modify it.</p>
+</li>
+<li>
+<p><strong>baseToolBoxXml*</strong></p>
+<p>It provide the special toolbox to gui. Suggested not to modify it.</p>
+</li>
+<li>
+<p><strong>programMode*</strong></p>
+<p>If the porgram mode is not supported the mode switch will be locked after select the device.</p>
+</li>
+<li>
+<p><strong>programLanguage*</strong></p>
+<p>This will be displayed in <strong>Program Language</strong> bar of the device selection interface.</p>
+</li>
+<li>
+<p><strong>helpLink</strong></p>
+<p>This will be used in device connection coninterface. Click the help button in connection coninterface, it will open this link.</p>
+</li>
+<li>
+<p>After these job, you should see your new device display in the device selection interface. If you click it, nothing will be happen, we still need to add logic layer code in vm.</p>
+</li>
+</ul>
+<h2 id="add-the-device-code-in-scratch-vm">Add the device code in scratch-vm<a class="headerlink" href="#add-the-device-code-in-scratch-vm" title="Permanent link">&para;</a></h2>
+<p><strong>NOTE: Since firmata has not been ported yet, the following content may be added and changed in the near future.</strong></p>
+<p><strong>NOTE: Since only the Arduino device system is currently completed, the following content is only adapted to Arduino devices. Other devices will be added in future</strong></p>
+<ol>
+<li>
+<p>Create a new folder in path <strong>scratch-vm\src\devices</strong> named by board name. eg : arduinoUno. And copy <code>src\devices\example\index.js</code> to the new folder After this, the file structure will look like this :</p>
+<div class="highlight"><pre><span></span><code>scratch-vm\src\devices\
+    |- arduinoLeonardo\
+    |- arduinoMega2560\
+    |- ...
+    |- &lt;board name&gt;\
+        |- index.js
+</code></pre></div>
+</li>
+<li>
+<p>Now let's modify the index.js.</p>
+</li>
+</ol>
+<p>The comments in the example are already very detailed. Follow the instructions to modify the file to fit your device. You can also refer to <code>src\devices\arduinoUno\index.js</code>. The following only introduces where you need to modify.</p>
+<ul>
+<li>
+<p>PNPID_LIST</p>
+<p>This list will control scratch-link to filter the serial device. Prevent ordinary users from being confused by the messy computer's own serial port or other useless serial devices.</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/* A list of USB device filters. If include &#39;*&#39; means disable the filter */</span>
+<span class="kr">const</span> <span class="nx">PNPID_LIST</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1">//https://github.com/arduino/Arduino/blob/1.8.0/hardware/arduino/avr/boards.txt#L51-L58</span>
+    <span class="s1">&#39;USB\\VID_2341&amp;PID_0043&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;USB\\VID_2341&amp;PID_0001&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;USB\\VID_2A03&amp;PID_0043&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;USB\\VID_2341&amp;PID_0243&#39;</span><span class="p">,</span>
+    <span class="c1">// For chinese clones that use CH340</span>
+    <span class="s1">&#39;USB\\VID_1A86&amp;PID_7523&#39;</span>
+    <span class="c1">// Uncomment this to close filter</span>
+    <span class="c1">// &#39;*&#39;</span>
+<span class="p">];</span>
+</code></pre></div>
+</li>
+<li>
+<p>DIVECE_OPT</p>
+<p><code>type</code> tells scratch-link witch program compiler and hardware flash should be used to handle the upload request.</p>
+<p><code>board</code> is provided to arduino_debug.exe. Same as we selection the board type in arduinoIDE. Visit this link to learn more about this parameter meanings and options: <a href="https://github.com/arduino/Arduino/blob/master/build/shared/manpage.adoc#options">Arduino manpage.adoc</a>.</p>
+<p><code>partno</code> tells the poart number of mcu number to avrdude. Visit this link to learn more about this parameter meanings and options: <a href="https://www.nongnu.org/avrdude/user-manual/avrdude_4.html#Option-Descriptions">avrdude Option-Descriptions</a></p>
+<div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * Configuration of build and flash. Used by arduino_debug and avrdude.</span>
+<span class="cm"> * @readonly</span>
+<span class="cm"> */</span>
+<span class="kr">const</span> <span class="nx">DIVECE_OPT</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;arduino&#39;</span><span class="p">,</span>
+    <span class="nx">board</span><span class="o">:</span> <span class="s1">&#39;arduino:avr:uno&#39;</span><span class="p">,</span>
+    <span class="nx">partno</span><span class="o">:</span> <span class="s1">&#39;atmega328p&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p>Add catlore and block to your device.</p>
+<p>The difference with the original scratch3 extension is <code>getInfo</code> return a object array not a object. So it allow you to provide multi catlore for your device in gui toolbox.</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * @returns {Array.&lt;object&gt;} metadata for this extension and its blocks.</span>
+<span class="cm"> */</span>
+<span class="nx">getInfo</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="c1">//...</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="c1">//...</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</li>
+</ul>
+<h2 id="add-block2code-generator-function-in-scratch-blocks">Add block2code generator function in scratch-blocks<a class="headerlink" href="#add-block2code-generator-function-in-scratch-blocks" title="Permanent link">&para;</a></h2>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../framework-introduction/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                构架介绍
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../changelog/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                发行说明
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 ScratchHW
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/ScratchHW" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.tabs'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
