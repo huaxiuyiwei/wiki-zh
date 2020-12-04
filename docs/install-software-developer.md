@@ -54,7 +54,7 @@
     cd ..
     cd scratch-gui
     npm install
-    npm link save-svg-as-png scratch-blocks scratch-l10n scratch-vm
+    npm link save-svg-as-png scratch-blocks scratch-l10n scratch-vm scratch-audio scratch-render
     cd ..
     ```
 
