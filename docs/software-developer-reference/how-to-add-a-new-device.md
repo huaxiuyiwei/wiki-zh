@@ -4,7 +4,7 @@
 
 在Scratch-HW中设备就是在指控制板如：Arduino UNO、Arduino Nano等。
 
-**注意**：在开启在scratchhw-gui的webpack服务器时，对此文件中的改动会自动触发webpack重新编译打包，所以修改文件或代码后直接保存即可查看效果，不需要重新启动webpack（即重新执行`npm run start`或`npm run start`指令 ）。
+**注意**：在开启在scratchhw-gui的webpack服务器时，对此文件中的改动会自动触发webpack重新编译打包，所以修改文件或代码后直接保存即可查看效果，不需要重新启动webpack（即重新执行`npm start`或`npm run start`指令 ）。
 
 ## 在scratchhw-gui添加设备图片和配置
 
