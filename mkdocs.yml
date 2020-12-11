@@ -70,16 +70,17 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-
 # Page tree
 nav:
   - 主页: index.md
   - 入门:
-    - 安装(开发者): install-software-developer.md
-    - 安装(普通用户): install-software-user.md
+    - 我是软件开发者: i-am-software-developer.md
+    - 我是普通用户: i-am-normal-user.md
     - 许可证: license.md
-  - 指南:
-    - 构架介绍: reference/framework-introduction.md
-    - 如何添加新设备: reference/how-to-add-a-new-device.md
+  - 软件开发者指南:
+    - 构架介绍: software-developer-reference/framework-introduction.md
+    - 如何添加新的设备: software-developer-reference/how-to-add-a-new-device.md
+    - 如何添加新的设备扩展: software-developer-reference/how-to-add-a-new-extension.md
+    - 代码生成器: software-developer-reference/code-generator.md
   - 变更记录:
-    - 发行说明: changelog.md
+    - 变更记录: changelog.md
