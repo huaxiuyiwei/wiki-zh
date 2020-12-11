@@ -8,15 +8,3 @@
 - [Link](https://github.com/ScratchHW/scratchhw-link) - 为前端程序提供本地硬件接口功能的服务器。
 - [Extension Server](https://github.com/ScratchHW/scratchhw-extension-server) - 为前端程序提供本地保存的插件文件的服务器。
 
-```mermaid
-classDiagram
-    ScratchHW前端主体 <|-- ScratchHW_Link
-    ScratchHW前端主体 <|-- ScratchHW_ExtensionServer
-    ScratchHW前端主体 : ScratchHW_GUI
-    ScratchHW前端主体 : ScratchHW_VM
-    ScratchHW前端主体 : ScratchHW_Blocks
-    ScratchHW_Link : 本地硬件接口服务器
-    ScratchHW_ExtensionServer : 扩展文件服务器
-            
-```
-

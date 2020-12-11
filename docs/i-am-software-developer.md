@@ -99,8 +99,8 @@ npm config set https-proxy http://server:port
 
 ## 了解更多开发内容
 
-1.  [参考/构架介绍](reference\framework-introduction.md) 
+1.  [构架介绍](software-developer-reference\framework-introduction.md) 
 
-2. [参考/如何添加新的设备](reference\how-to-add-a-new-device.md) 
+2. [如何添加新的设备](software-developer-reference\how-to-add-a-new-device.md) 
 
-3. [参考/如何添加新的扩展](reference\how-to-add-a-new-extension.md)
+3. [如何添加新的扩展](software-developer-reference\how-to-add-a-new-extension.md)

@@ -2,7 +2,7 @@
 
 ## 概述
 
-在 scratch-HW 中 devices extension 是为device设备提供的扩展，不同于scratch原生扩展，devices extension不会被webpack打包，它是由一个外部的扩展服务器提供的，当然这个服务器可以是远程的也可以是本地的。通过这种方式我们就可以实现扩展的动态修改和加载功能了。
+在 scratch-HW 中 devices extension 是为device设备提供的扩展，不同于scratch原本的扩展，devices extension不会被webpack打包，它是由一个外部的扩展服务器提供的，当然这个服务器可以是远程的也可以是本地的。通过这种方式我们就可以实现扩展的动态修改和加载功能了。
 
 ## 具体步骤
 
